@@ -1,6 +1,8 @@
 class Hckr < Formula
   desc "Browse Hacker News from the terminal"
   homepage "https://github.com/kzzzld/hckr"
+  url "https://github.com/kzzzld/hckr/releases/download/v0.1.0/hckr-0.1.0.tar.gz"
+  sha256 "0586088ff4298f6670db16f6226c6e8e1c183a0751a2c58ef363e614f9ee8714"
   head "https://github.com/kzzzld/hckr.git", branch: "main"
 
   depends_on "pkgconf" => :build
