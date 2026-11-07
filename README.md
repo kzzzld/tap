@@ -24,3 +24,17 @@ brew upgrade --fetch-HEAD kzzzld/tap/hckr
 ```
 
 Project documentation and source: [kzzzld/hckr](https://github.com/kzzzld/hckr).
+
+## Stable releases
+
+The `Update hckr` action checks [hckr releases](https://github.com/kzzzld/hckr/releases) hourly. It verifies the source archive against the published SHA256SUMS file and updates the stable formula URL and checksum. Development `--HEAD` installs remain available. Before the first release, the updater makes no changes.
+
+For an immediate check after a release finishes:
+
+```sh
+gh workflow run update-hckr.yml --repo kzzzld/tap
+```
+
+After the first stable release, install with `brew install kzzzld/tap/hckr`. To switch an existing development install to stable, run `brew reinstall kzzzld/tap/hckr`.
+
+Keep build instructions and dependencies synchronized with the development template in the hckr repository. The updater only changes the stable source URL and checksum. Never replace a published version's assets; publish a new version for corrections.
