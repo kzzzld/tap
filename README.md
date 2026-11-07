@@ -12,6 +12,8 @@ brew install --HEAD kzzzld/tap/hckr
 brew test kzzzld/tap/hckr
 ```
 
+If Homebrew asks you to trust the formula, run `brew trust --formula kzzzld/tap/hckr`, then retry installation.
+
 The formula builds the current `main` branch; no tagged release is available yet.
 
 To update:
