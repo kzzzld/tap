@@ -35,6 +35,6 @@ For an immediate check after a release finishes:
 gh workflow run update-hckr.yml --repo kzzzld/tap
 ```
 
-After the first stable release, install with `brew install kzzzld/tap/hckr`. To switch an existing development install to stable, run `brew reinstall kzzzld/tap/hckr`.
+After the first stable release, install with `brew install kzzzld/tap/hckr`. To switch an existing development install to stable, run `brew uninstall hckr` and then `brew install kzzzld/tap/hckr`. Your personal configuration stays in `~/.config/hckr`.
 
 Keep build instructions and dependencies synchronized with the development template in the hckr repository. The updater only changes the stable source URL and checksum. Never replace a published version's assets; publish a new version for corrections.
