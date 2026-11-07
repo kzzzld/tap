@@ -7,7 +7,7 @@ Homebrew formulae maintained by [kzzzld](https://github.com/kzzzld).
 A Hacker News terminal app written in C, with keyboard and mouse navigation, threaded discussions, and configurable INI themes.
 
 ```sh
-brew tap kzzzld/tap
+brew tap kzzzld/tap https://github.com/kzzzld/tap
 brew install --HEAD kzzzld/tap/hckr
 brew test kzzzld/tap/hckr
 ```
